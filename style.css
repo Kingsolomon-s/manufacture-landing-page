@@ -69,6 +69,11 @@ div.big-image h1 {
   font-size: 5rem;
   max-width: 550px;
   line-height: 1.2;
+  font-weight: 500;
+  margin-top: 30px;
+}
+div.big-image > div > p:last-of-type {
+  margin-top: 40px;
 }
 div.big-image a {
   text-decoration: underline;
@@ -314,27 +319,84 @@ div.intrude h2 {
   background: #000;
   color: #fff;
   grid-column: span 12;
-  padding: 100px;
+  padding: 100px 100px 30px;
 }
-.footer-container .first {
+.footer-container .first-footer {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
+  margin: 0;
 }
-.footer-container .first .first-item h3 {
+.footer-container .first-footer .first-item h3 {
   font-size: 2.4rem;
   font-weight: 400;
   max-width: 631px;
   line-height: 1.4;
 }
-.footer-container .first .first-item h3 span {
+.footer-container .first-footer .first-item h3 span {
   color: #8d959d;
 }
-.footer-container .first .first-item div {
+.footer-container .first-footer .first-item div {
   display: flex;
   gap: 30px;
   margin-top: 30px;
 }
-.footer-container .first .first-item div p {
+.footer-container .first-footer .first-item div p {
   font-size: 1rem;
   color: #fff;
+}
+.footer-container .first-footer > .second-item p {
+  color: #fff;
+  font-size: 0.95rem;
+}
+.footer-container .first-footer > .second-item button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  background: #fff;
+  color: #000;
+  font-weight: bolder;
+  border: none;
+  margin-top: 20px;
+}
+.footer-container .second-footer {
+  grid-column: span 12;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #777;
+}
+.x {
+  width: 30px;
+  height: 30px;
+  background: #999999;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+}
+.footer-container .second-footer div:nth-of-type(2) {
+  display: flex;
+  gap: 10px;
+}
+.footer-container .second-footer nav {
+  display: flex;
+  gap: 35px;
+}
+.footer-container .second-footer nav a {
+  text-decoration: none;
+  color: #fff;
+}
+footer {
+  grid-column: span 12;
+  display: flex;
+  margin-top: 50px;
+}
+footer p:nth-of-type(2) {
+  margin-left: auto;
+}
+footer p:nth-of-type(3) {
+  margin-left: 20px;
 }
