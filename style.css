@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
 
-/* background: #f5f5f5; */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,7 +15,6 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
-  /* padding: 0 20px; */
   position: relative;
 }
 header {
@@ -61,7 +59,6 @@ div.big-image {
   height: 850px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* color: #ffffff; */
 }
 
 div.big-image div:first-child {
@@ -131,7 +128,6 @@ div.intrude h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid #8d959d; */
   border-radius: 50%;
   background: #f2f4f4;
   font-weight: 600;
@@ -273,4 +269,72 @@ div.intrude h2 {
 }
 .solution h2 span {
   color: #8d959d;
+}
+.solution > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f2f4f4;
+  padding: 12px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.solution > div > div {
+  padding: 30px;
+}
+.solution > div > div h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.solution > div > div p {
+  color: #333;
+  max-width: 450px;
+}
+.solution > div > div button {
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: #00d47e;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+.solution > div > div p:last-of-type {
+  color: #000;
+  margin-top: 100px;
+}
+.solution > div > div p:last-of-type span {
+  color: #616161;
+}
+.solution > div > img {
+  width: 100%;
+  border-radius: 15px;
+}
+.footer-container {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  grid-column: span 12;
+  padding: 100px;
+}
+.footer-container .first {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+}
+.footer-container .first .first-item h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  max-width: 631px;
+  line-height: 1.4;
+}
+.footer-container .first .first-item h3 span {
+  color: #8d959d;
+}
+.footer-container .first .first-item div {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.footer-container .first .first-item div p {
+  font-size: 1rem;
+  color: #fff;
 }
